@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact</title>
+		<meta name="viewport" content="width= device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="hnb_ss.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Delius&family=Merienda+One&family=Zilla+Slab+Highlight&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Galdeano&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;1,400&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			#contact {
+				background-color: #0071bc;
+				color: white;
+			}
+
+			.bs {
+				visibility: hidden;
+			}
+
+			body {
+				background-image: url("Images/bg.png");
+				background-attachment: fixed;
+				background-size: contain;
+				background-repeat: repeat-y;
+				margin: 0%;
+			}
+
+			.contactform {
+				font-family: "Barlow Semi Condensed", sans-serif;
+				font-size: 2.5vw;
+			}
+
+			input[type="text"],
+			select,
+			textarea {
+				width: 100%;
+				padding: 3%;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+				resize: vertical;
+			}
+
+			label {
+				padding-right: 1%;
+				display: inline-block;
+			}
+
+			input[type="submit"] {
+				background-color: #4caf50;
+				color: white;
+				padding: 1% 2%;
+				font-size: 1.5vw;
+				border: none;
+				border-radius: 4px;
+				cursor: pointer;
+				float: left;
+			}
+
+			.box {
+				display: inline-block;
+				width: 10%;
+			}
+
+			.bbox {
+				display: inline-block;
+				width: 25%;
+			}
+
+			.bbbox {
+				width: 75%;
+			}
+
+			#stars {
+				height: 4vw;
+				width: 4vw;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="nb">
+			<ul>
+				<div class="bs">
+					<li>alright</li>
+					<li>alright</li>
+					<li>alright</li>
+					<li>alright</li>
+					<li>alright</li>
+					<li>alright</li>
+					<li>alright</li>
+					<li>alright</li>
+					<li>alright</li>
+				</div>
+				<li><a id="home" href="index.html">Home</a></li>
+				<div class="bs">
+					<li>alright</li>
+				</div>
+				<li><a id="about" href="About.html">About Me</a></li>
+				<div class="bs">
+					<li>alright</li>
+				</div>
+				<li><a id="myworks" href="MyWorks.html">My Works</a></li>
+				<div class="bs">
+					<li>alright</li>
+				</div>
+				<li><a id="achievements" href="Achievements.html">Achievements</a></li>
+				<div class="bs">
+					<li>alright</li>
+				</div>
+				<li><a id="contact" href="Contact.html">Contact</a></li>
+			</ul>
+		</div>
+
+		<div style="margin-left: 20%">
+			<p id="title">Get in touch &nbsp;</p>
+
+			<a href="https://twitter.com/Kritika27514143" target="_blank"
+				><img id="stars" src="Images/twitter.png"
+			/></a>
+			<a
+				href="https://instagram.com/_.the_lost_star._?igshid=1bqdtjrpg4lt0"
+				target="_blank"
+				><img id="stars" src="Images/ig.png"
+			/></a>
+			<a
+				href="https://www.facebook.com/kritika.meena.7773/?viewas=100000686899395"
+				target="_blank"
+				><img id="stars" src="Images/facebook.png"
+			/></a>
+			<a href="https://www.linkedin.com/in/kritika-m-20b000128/" target="_blank"
+				><img id="stars" src="Images/lin.png"
+			/></a>
+			<br />
+			<img id="line" src="Images/line.png" />
+			<br />
+			<p id="stitle">Stay in touch !</p>
+			<br /><br />
+
+			<div class="contactform">
+				<form action="/action_page.php">
+					<div class="heading">
+						<div class="box">
+							<label for="name">Name:</label>
+						</div>
+						<div class="bbox">
+							<input type="text" id="name" name="name" />
+						</div>
+					</div>
+					<div class="heading">
+						<div class="box">
+							<label for="email">E-mail:</label>
+						</div>
+						<div class="bbox">
+							<input type="text" id="email" name="email" />
+						</div>
+					</div>
+					<br />
+					<div class="heading">
+						<div class="box">
+							<label for="subject">Message:</label>
+						</div>
+						<div class="bbbox">
+							<textarea id="subject" name="subject"></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<input type="submit" value="Submit" />
+					</div>
+				</form>
+			</div>
+		</div>
+		<br />
+		<br />
+	</body>
+</html>
