@@ -1,51 +1,71 @@
-ul {
-	list-style-type: none;
+.nb {
 	margin: 0;
+	margin-top: 25vh;
 	padding: 0;
-	position: fixed;
-	vertical-align: middle;
-	overflow: auto;
 	width: 18%;
+	opacity: 90%;
+	position: fixed;
+	float: left;
+	overflow: auto;
+	background-color: #f1f1f1;
 }
 
-li a {
+#none {
+	background-color: white;
+	color: white;
+	display: block;
+}
+
+div.content {
+	margin-left: 18%;
+	padding: 2% 2% 2% 2%;
+}
+
+@media screen and (max-width: 700px) {
+	.nb {
+		width: 100%;
+		height: auto;
+		position: relative;
+		margin-top: 0%;
+	}
+	.nb a {
+		float: left;
+	}
+	div.content {
+		margin-left: 0;
+	}
+
+	#none {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.nb a {
+		text-align: center;
+		float: none;
+		margin-top: 0%;
+	}
+	#none {
+		display: none;
+	}
+}
+
+#home,
+#about,
+#myworks,
+#achievements,
+#contact {
 	display: block;
 	font-family: "Merriweather", serif;
 	background-color: #f1f1f1;
 	color: #000;
-	padding: 4% 8%;
-	padding-left: 10%;
+	padding-right: 2%;
+	padding-left: 2%;
 	text-decoration: none;
 	font-size: 2vw;
-}
-
-#achievements:hover {
-	width: 75%;
-}
-
-#about:hover {
-	width: 55%;
-}
-
-#myworks:hover {
-	width: 58%;
-}
-
-#contact:hover {
-	width: 50%;
-}
-
-#home:hover {
-	width: 40%;
-}
-
-#nb {
-	position: sticky;
-	align-items: center;
-}
-
-a:hover {
-	color: white;
+	padding-top: 5%;
+	padding-bottom: 5%;
 }
 
 #about:hover {
@@ -54,23 +74,27 @@ a:hover {
 
 #home:hover {
 	background-color: gold;
+	color: white;
 }
 
 #achievements:hover {
 	background-color: #9e005d;
+	color: white;
 }
 
 #myworks:hover {
 	background-color: #ed1c24;
+	color: white;
 }
 
 #contact:hover {
 	background-color: #0071bc;
+	color: white;
 }
 
 #title {
 	color: black;
-	font-size: 8vw;
+	font-size: 7.8vw;
 	font-family: "Dela Gothic One", cursive;
 	margin-top: 0px;
 	padding: 0px;
@@ -95,7 +119,7 @@ a:hover {
 	padding-right: 2%;
 	padding-top: 0.15%;
 	padding-bottom: 0.15%;
-	width: 93%;
+	width: 97%;
 	opacity: 90%;
 }
 

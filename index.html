@@ -1,115 +1,166 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<title>Kritika's Portfolio</title>
 
-    <head>
-        <title>Kritika's Portfolio</title>
+		<meta name="viewport" content="width= device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-        <meta name="viewport" content="width= device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Delius&family=Merienda+One&family=Zilla+Slab+Highlight&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+			rel="stylesheet"
+		/>
 
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&display=swap" rel="stylesheet">
+		<style>
+			html {
+				scroll-behavior: smooth;
+			}
 
-        <style>
-            body
-            {    
-                background-image: url("Images/bgl.png");
-                background-size: cover;
-                background-repeat: no-repeat;
-                margin: 0%;
-            }
+			body {
+				margin: 0px;
+				padding: 0px;
+				background-image: url("Images/bimg.jpg");
+				background-size: cover;
+			}
 
-   
+			p {
+				font-size: 8vh;
+				color: gold;
+			}
 
-            p
-            {
-                font-size: 2.6vw;
-                color: gold;
-                display: inline;
-                
-            }
+			@keyframes fade {
+				0% {
+					opacity: 0;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
 
-            #l1
-            {
-                padding-left: 600px;
-                font-family: 'Poiret One', cursive;
-            }
+			@keyframes light {
+				0% {
+					color: yellow;
+				}
+				100% {
+					color: gold;
+				}
+			}
 
-            #l3
-            {
-                padding-left: 820px;
-                font-family: 'Poiret One', cursive;
-            }
+			.name {
+				display: flex;
+				flex-direction: column;
+				height: 50vh;
+				justify-content: center;
+				align-items: center;
+				font-size: 13vh;
+				color: gold;
+				font-family: "Dela Gothic One", cursive;
+				flex: 1;
+				animation: fade 1s 0.5s ease;
+				animation: light 1s 1.5s infinite reverse ease;
+			}
 
-            ul 
-            {
-                list-style-type: none;
-                margin:0%;
-                padding: 0%;
-                overflow: hidden;}
+			.tabs {
+				display: flex;
+				flex-direction: column;
+				height: 10vh;
+				justify-content: center;
+				align-items: center;
+				flex: 1;
+				animation: fade 1s 0.5s ease;
+			}
 
-            li 
-            {
-                float: left;
-            }
+			a {
+				font-size: 6vh;
+				color: white;
+				font-family: "Lobster", cursive;
+				text-decoration: none;
+			}
 
-            li a 
-            {
-                display: block;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-                color: white;
-                font-family: 'Lobster Two', cursive;
-            }
+			a:hover {
+				transform: scale(1.1);
+				text-shadow: 5px 5px black;
+			}
 
+			#line {
+				height: auto;
+				width: 35%;
+			}
+		</style>
+	</head>
 
-            #about, #myworks, #contact
-            {
-                font-size: 50px;
-            }
+	<body>
+		<div class="name">
+			Kritika
+			<br />
+			<img id="line" src="Images/line.png" />
+		</div>
 
-            #achievements
-            {
-             font-size: 40px;
-            }
-
-            a:hover
-            {
-               transform: scale(1.1);
-                text-shadow: 5px 5px black;
-                
-            }
-            
-                   
-
-
-
-
-        </style>
-    </head>
-   
-    <body>
-        <br><b><p id="l1">Hi, I am</p></b><br><br>
-        <ul>
-            <li><p>&emsp; &emsp;&nbsp; &nbsp;&nbsp; &emsp; &emsp; &emsp;</p></li>
-           <li> <a id= "about" href= "About.html" >About Me</a> </li> 
-           <li><p>&emsp; &emsp; &emsp; &emsp; &emsp;&emsp;&nbsp;&emsp; &emsp; &emsp; &emsp; &emsp;&emsp; &emsp; &emsp;&emsp; &emsp;</p></li></p></li>
-           <li><a id= "achievements" href= "Achievements.html">Achievements</a></li>
-            </ul> 
-        </ul>
-        
-        <br><br>
-       <b><p id="l3">&nbsp; Nice to meet you </p></b>
-
-       <ul>
-       <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-       <li><p>&emsp;&nbsp;</p></li>
-           <li><a id= "myworks" href= "MyWorks.html">My Works</a></li>
-           <li><p>&emsp; &emsp; &emsp; &emsp;&nbsp;&nbsp;&nbsp; &emsp;&emsp; &emsp; &emsp; &emsp;&emsp;&emsp; &emsp; &emsp;&emsp; &emsp; &emsp;&emsp; &emsp;</p></li></p></li>
-           <li><a id= "contact" href= "Contact.html">Contact</a></li>
-           </ul>
-           <br><br><br><br><br>
-    </body>
-
+		<div class="tabs">
+			<a
+				href="About.html"
+				style="
+					border: 0.25%;
+					border-style: solid;
+					border-color: white;
+					padding: 3.8%;
+					padding-top: 0.25%;
+					padding-bottom: 0.25%;
+				"
+				>About Me</a
+			>
+		</div>
+		<div class="tabs">
+			<a
+				href="MyWorks.html"
+				style="
+					border: 0.25%;
+					border-width: 25%;
+					border-style: solid;
+					border-color: white;
+					padding: 3.3%;
+					padding-top: 0.25%;
+					padding-bottom: 0.25%;
+				"
+				>My Works</a
+			>
+		</div>
+		<div class="tabs">
+			<a
+				href="Achievements.html"
+				style="
+					border: 0.25%;
+					border-style: solid;
+					border-color: white;
+					padding: 1.7%;
+					padding-top: 0.25%;
+					padding-bottom: 0.25%;
+				"
+				>Achievements</a
+			>
+		</div>
+		<div class="tabs">
+			<a
+				href="Contact.html"
+				style="
+					border: 0.25%;
+					border-style: solid;
+					border-color: white;
+					padding: 5%;
+					padding-top: 0.25%;
+					padding-bottom: 0.25%;
+				"
+				>Contact</a
+			>
+		</div>
+	</body>
 </html>
